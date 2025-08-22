@@ -76,8 +76,3 @@ modal.addEventListener('click', (e) => {
         modal.classList.remove('active');
     }
 });
-
-// Настройка темы Telegram
-Telegram.WebApp.onEvent('themeChanged', () => {
-    document.body.style.backgroundColor = Telegram.WebApp.themeParams.bg_color || '#000000';
-});
